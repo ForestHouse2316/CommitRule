@@ -1,14 +1,78 @@
 # CommitRule
-#### ⚠️Notice⚠️
-> - 본 Repository 는 공동개발(협업) 시 사용되는 Git 시스템의 사용 표준을 사전에 작성한 것이며 각 개발마다 NewBranch 또는 Fork 하여 내용을 팀에 맞게 수정하는 것을 권장한다.
-> - 본 가이드라인의 궁극적인 목적은 Git 시스템을 이용하여 효율적이고 가독성이 높은 개발 이력을 남기는 것에 있다. 따라서 이를 위한 개발, 분업, 디버그 방식의 표준 또한 작성되어 있다.
-> - 본 가이드라인은 영리목적에 관한 제한 없이 누구든 사용할 수 있으나 본 가이드라인을 채용하여 발생한 문제의 책임은 사용한 개인 또는 단체에 있다.
-> - 누구든지 본 가이드라인에 대한 개선사항 요청 및 각종 오류를 신고하고자 한다면 Issues 탭에 이를 올릴 수 있다.
-> - 본 가이드라인은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> 라이센스 규칙을 따른다.
+<details><summary>⚠️Notice⚠️</summary>
 
+> - 본 Repository 는 공동개발(협업) 시 사용되는 Git 시스템의 사용 표준을 사전에 작성한 것이며 각 개발마다 Fork 또는 Clone 하여 내용을 팀에 맞게 수정하는 것을 권장한다.\
+> Clone 후 아래 라이센스를 준수하는 범위 내에서 자유롭게 public/private repository에 사본을 올릴 수 있다.
+> - 본 가이드라인의 궁극적인 목적은 Git 시스템을 이용하여 효율적이고 가독성이 높은 개발 이력을 남기고 팀원 간 협업이 원활하게 진행되는 것에 있다.
+> - 본 가이드라인은 영리목적에 관한 제한 없이 누구든 사용할 수 있으나 본 가이드라인을 채용하여 발생한 문제의 책임은 사용한 개인 또는 단체에 있다.
+> - 본 가이드라인은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> 라이센스 규칙을 따른다.\
+> 사적인 목적으로 이용하는 경우 cc-by 조항은 준수하지 않아도 되며, 오픈소스 프로젝트 등 공공의 목적으로 이용 시에는 본문의 링크를 기재하여야 한다.\
+> 이는 repository의 공개범위인 public/private 과는 별개의 내용이다.
+
+</details>
 
 ## Branch
 ### Branch naming
+기본적인 양식은 다음과 같다 : `[TAG] Message`
+- TAG는 해당 커밋이 무엇을 변경하였는지 나타낸다.
+- Message는 해당 커밋의 내용으로, title과 content로 나뉘어진다.
+- title 에는 변경사항들에 대한 요약을, 세부적인 사항은 content 에 적는다 (content는 필요 시 선택적으로 작성한다).\
+JetBrains 계열 IDE 의 경우, 엔터가 연속하여 2번 입력된 지점의 커밋 메시지부터 content 로 인식한다 :
+```
+[TAG] Title of the commit.
+This line is still in the title section.
+
+Here's the content section of the commit message
+```
+
+#### TAG
+[TAG]란에는 다음과 같은 태그들이 들어갈 수 있다.
+
+#### title
+- 커밋의 제목은 50자 이내로 작성할 것을 권장한다.
+- 커밋의 시작은 기본 형태의(현재시제) 동사를 사용한다. 첫 글자는 대문자로 시작한다.
+```
+Make (O)
+make (X)
+Making (X)
+Makes (X)
+Made (X)
+```
+
+#### content
+- 커밋의 변경사항에 대해 추가적으로 기술해야하는 내용이 있는 경우에 사용한다.
+- 커밋의 content는 해당 커밋을 선택하기 전까지는 표시되지 않으며, 커밋 세부사항 조회 시 파일 변경사항과 함께 내용이 나타난다 (GitHub/로컬 모두 해당)
+- 그러므로 중요한 내용은 title 단에서 보여줄 수 있도록 message를 작성하여야 한다.
+
+<details>
+  <summary>Additional methods</summary>
+  
+#### Double Tagging
+팀에 따라 선택적으로 사용가능한 `[TAG1][TAG2] Message` 형식으로 사용할 수 있으며 다음과 같이 이용할 수 있다 :\
+- TAG1 을 상위 분류, TAG2 를 하위 분류로서 사용한다.
+- TAG1 과 TAG2 에 해당하는 변경사항이 해당 commit 안에 모두 들어있음을 의미 (이 경우 `[TAG1][TAGn] Message` 도 가능하나, __권장하지 아니함__)
+가독성 측면에서 좋지 못하므로 이중태그 방식을 사용할 경우 상위-하위 태그를 사용하는 방법으로만 이용하는 것을 권장한다.
+  
+#### Gitmoji
+이모티콘을 사용하여 나타내는 commit message 를 gitmoji 라 한다. [gitmoji repository](https://github.com/carloscuesta/gitmoji)\
+♻️, ⚡ 등의 아이콘들을 이용하여 나타내면 되며 github 상에서 `:emoji_name:` 형태로 작성이 가능하다. (Discord 와 동일한 방식)\
+일반적인 서식은 TAG 위치에 이모지를 대신 넣는 것으로, `♻️ Refactor dialogue system's control method` 와 같이 사용할 수 있다.\
+\
+단 로컬상에서는 이모티콘이 아닌 일반 텍스트 형태(e.g. `:zap:`)로 보이므로 로컬에서 사용 시 오히려 가독성이 떨어지는 문제가 있다.\
+따라서 로컬에서는 실제 이모티콘을 사용하거나 태그 네이밍과 같이 사용하여야 한다.\
+로컬에서 TAG + emoji 작성 예시는 다음과 같다 :
+- 작성 : `[Refactor] :recycle: Refactor dialogue system's control method`
+- 로컬 내 표시 : `[Refactor] :recycle: Refactor dialogue system's control method`
+- GitHub 내 표시 : `[Refactor] ♻️ Refactor dialogue system's control method`
+
+로컬에서 emoji 작성 예시는 다음과 같다 :
+- 작성 : `♻️ Refactor dialogue system's control method`
+- 로컬 내 표시 : `♻️ Refactor dialogue system's control method`
+- GitHub 내 표시 : `♻️ Refactor dialogue system's control method`
+
+</details>
+
+
 ### Kind of branches
 ### Dividing branch from a feature branch
 ### Merge & Rebase

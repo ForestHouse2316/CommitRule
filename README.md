@@ -29,21 +29,21 @@ Here's the content section of our commit.
 [TAG]란에는 다음과 같은 태그들이 들어갈 수 있다.\
 emoji 의 경우 [공식 gitmoji 가이드라인](https://gitmoji.dev/)에서 간소화한 버전을 기재한다.
 
-| TAG      | emoji     | Use when                                   |
-|----------|-----------|--------------------------------------------|
-| Feat     | ✨         | 새로운 기능의 추가                                 |
-| Fix      | 🐛        | 버그 수정                                      |
-| Patch    | 🩹        | Chore 수준의 사소한 버그 수정                        |
-| Refactor | ♻️        | 유지보수를 위한 코드 리팩터링 _(최적화는 Opt 이용)_           |
-| Opt      | ⚡         | 로직 및 성능 최적화 _(단순 유지보수는 Refactor 이용)_       |
-| Style    | 🎨        | 로직상 변경이 없는 코드 format, structure 변경         |
-| Test     | 🧪        | Test 와 관련된 모든 작업                           |
-| Docs     | 📝        | Readme, 코드 내 doc 관련 작업 (리소스 제외)            |
-| Res      | 📦        | 의존성 있는 모든 리소스 파일 및 빌드 (이미지, JSON, .exe 등)  |
-| CI       | 🔄️       | CI 관련 작업                                   |
-| Git      | 🔀\⏪\🍒 ️ | Git 시스템 관련 작업 (merge, revert, cherry-pick) |
-| Clean    | 🧹        | Redundant 한 코드, 주석, 파일 등의 제거               |
-| Chore    | ➿         | 기타 중요도가 ___매우 낮은___ 작업 및 변경사항              |
+| TAG      | emoji                  | Use when                                   |
+|----------|------------------------|--------------------------------------------|
+| Feat     | ✨`:sparkels:`          | 새로운 기능의 추가                                 |
+| Fix      | 🐛`:bug:`              | 버그 수정                                      |
+| Patch    | 🩹`:adhesive_bandage:` | Chore 수준의 사소한 버그 수정                        |
+| Refactor | ♻️`:recycle:`          | 유지보수를 위한 코드 리팩터링 _(최적화는 Opt 이용)_           |
+| Opt      | ⚡`:zap:`               | 로직 및 성능 최적화 _(단순 유지보수는 Refactor 이용)_       |
+| Style    | 🎨`:art:`              | 로직상 변경이 없는 코드 format, structure 변경         |
+| Test     | 🧪`:test_tube:`        | Test 와 관련된 모든 작업                           |
+| Docs     | 📝`:memo:`             | Readme, 코드 내 doc 관련 작업 (리소스 제외)            |
+| Res      | 📦`:package:`          | 의존성 있는 모든 리소스 파일 및 빌드 (이미지, JSON, .exe 등)  |
+| CI       | 🔄️                    | CI 관련 작업                                   |
+| Git      | 🔀\⏪\🍒 ️              | Git 시스템 관련 작업 (merge, revert, cherry-pick) |
+| Clean    | 🧹                     | Redundant 한 코드, 주석, 파일 등의 제거               |
+| Chore    | ➿`:loop:`              | 기타 중요도가 ___매우 낮은___ 작업 및 변경사항              |
 
 #### message
 - 커밋메시지는 50자 이내로 작성할 것을 권장한다.

@@ -13,24 +13,42 @@
 
 ## Branch
 ### Branch naming
-기본적인 양식은 다음과 같다 : `[TAG] Message`
+기본적인 양식은 다음과 같다 : `[TAG] message`
 - TAG는 해당 커밋이 무엇을 변경하였는지 나타낸다.
-- Message는 해당 커밋의 내용으로, title과 content로 나뉘어진다.
-- title 에는 변경사항들에 대한 요약을, 세부적인 사항은 content 에 적는다 (content는 필요 시 선택적으로 작성한다).\
+- message는 해당 커밋의 내용으로, 일종의 title 에 해당한다.
+- message 에는 변경사항들에 대한 요약을, 세부적인 사항은 content 에 적는다 (content는 필요 시 선택적으로 작성한다).\
 JetBrains 계열 IDE 의 경우, 엔터가 연속하여 2번 입력된 지점의 커밋 메시지부터 content 로 인식한다 :
 ```
-[TAG] Title of the commit.
-This line is still in the title section.
+[TAG] Message of the commit.
+This line is still in the message section.
 
-Here's the content section of the commit message
+Here's the content section of our commit.
 ```
 
 #### TAG
-[TAG]란에는 다음과 같은 태그들이 들어갈 수 있다.
+[TAG]란에는 다음과 같은 태그들이 들어갈 수 있다.\
+emoji 의 경우 [공식 gitmoji 가이드라인](https://gitmoji.dev/)에서 간소화한 버전을 기재한다.
 
-#### title
-- 커밋의 제목은 50자 이내로 작성할 것을 권장한다.
-- 커밋의 시작은 기본 형태의(현재시제) 동사를 사용한다. 첫 글자는 대문자로 시작한다.
+| TAG      | emoji     | Use when                                   |
+|----------|-----------|--------------------------------------------|
+| Feat     | ✨         | 새로운 기능의 추가                                 |
+| Fix      | 🐛        | 버그 수정                                      |
+| Patch    | 🩹        | Chore 수준의 사소한 버그 수정                        |
+| Refactor | ♻️        | 유지보수를 위한 코드 리팩터링 _(최적화는 Opt 이용)_           |
+| Opt      | ⚡         | 로직 및 성능 최적화 _(단순 유지보수는 Refactor 이용)_       |
+| Style    | 🎨        | 로직상 변경이 없는 코드 format, structure 변경         |
+| Test     | 🧪        | Test 와 관련된 모든 작업                           |
+| Docs     | 📝        | Readme, 코드 내 doc 관련 작업 (리소스 제외)            |
+| Res      | 📦        | 의존성 있는 모든 리소스 파일 및 빌드 (이미지, JSON, .exe 등)  |
+| CI       | 🔄️       | CI 관련 작업                                   |
+| Git      | 🔀\⏪\🍒 ️ | Git 시스템 관련 작업 (merge, revert, cherry-pick) |
+| Clean    | 🧹        | Redundant 한 코드, 주석, 파일 등의 제거               |
+| Chore    | ➿         | 기타 중요도가 ___매우 낮은___ 작업 및 변경사항              |
+
+#### message
+- 커밋메시지는 50자 이내로 작성할 것을 권장한다.
+- 별도의 
+- 메시지의시작은 동사 원형을 사용한다. 첫 글자는 대문자로 시작한다.
 ```
 Make (O)
 make (X)
@@ -42,7 +60,7 @@ Made (X)
 #### content
 - 커밋의 변경사항에 대해 추가적으로 기술해야하는 내용이 있는 경우에 사용한다.
 - 커밋의 content는 해당 커밋을 선택하기 전까지는 표시되지 않으며, 커밋 세부사항 조회 시 파일 변경사항과 함께 내용이 나타난다 (GitHub/로컬 모두 해당)
-- 그러므로 중요한 내용은 title 단에서 보여줄 수 있도록 message를 작성하여야 한다.
+- 그러므로 중요한 내용은 message 단에서 보여줄 수 있도록 한다.
 
 <details>
   <summary>Additional methods</summary>
@@ -57,6 +75,7 @@ Made (X)
 이모티콘을 사용하여 나타내는 commit message 를 gitmoji 라 한다. [gitmoji repository](https://github.com/carloscuesta/gitmoji)\
 ♻️, ⚡ 등의 아이콘들을 이용하여 나타내면 되며 github 상에서 `:emoji_name:` 형태로 작성이 가능하다. (Discord 와 동일한 방식)\
 일반적인 서식은 TAG 위치에 이모지를 대신 넣는 것으로, `♻️ Refactor dialogue system's control method` 와 같이 사용할 수 있다.\
+gitmoji 또한 [커밋별 이모지 사용 가이드라인](https://gitmoji.dev/) 이 규정되어 있으나 이를 자신의 팀에 맞게 간소화하는 것을 권장한다.\
 \
 단 로컬상에서는 이모티콘이 아닌 일반 텍스트 형태(e.g. `:zap:`)로 보이므로 로컬에서 사용 시 오히려 가독성이 떨어지는 문제가 있다.\
 따라서 로컬에서는 실제 이모티콘을 사용하거나 태그 네이밍과 같이 사용하여야 한다.\

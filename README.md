@@ -26,29 +26,30 @@ Here's the content section of our commit.
 ```
 
 #### TAG
-[TAG]란에는 다음과 같은 태그들이 들어갈 수 있다.\
-emoji 의 경우 [공식 gitmoji 가이드라인](https://gitmoji.dev/)에서 간소화한 버전을 기재한다.
+TAG 위치에는 다음과 같은 태그들이 들어갈 수 있다.
 
 |   TAG    | emoji | Use when                                  |
 |:--------:|:-----:|-------------------------------------------|
 |   Feat   |   ✨   | 새로운 기능의 추가                                |
 |   Fix    |  🐛   | 버그 수정                                     |
 |  Patch   |  🩹   | Chore 수준의 사소한 버그 수정                       |
-| Refactor |  ♻️   | 유지보수를 위한 코드 리팩터링 _(최적화는 Opt 이용)_          |
-|   Opt    |   ⚡   | 로직 및 성능 최적화 _(단순 유지보수는 Refactor 이용)_      |
+| Refactor |  ♻️   | 유지보수를 위한 코드 리팩터링 (_최적화는 Opt 이용_)          |
+|   Opt    |   ⚡   | 로직 및 성능 최적화 (_단순 유지보수는 Refactor 이용_)      |
 |  Style   |  🎨   | 로직상 변경이 없는 코드 format, structure 변경        |
 |   Test   |  🧪   | Test 와 관련된 모든 작업                          |
 |   Docs   |  📝   | Readme, 코드 내 doc 관련 작업 (리소스 제외)           |
 |   Res    |  📦   | 의존성 있는 모든 리소스 파일 및 빌드 (이미지, JSON, .exe 등) |
 |    CI    |  🔃️  | CI 관련 작업                                  |
-|  Merge   | 🔀 ️  | Merge 관련 작업                               |
+|  Merge   |  🔀️  | Merge 관련 작업                               |
 |  Revert  |   ⏪   | 변경사항 Revert                               |
-|  Cherry  | 🍒 ️  | Cherry-pick 수행                            |
+|  Cherry  |  🍒️  | Cherry-pick 수행                            |
 |   Git    | ️🐈‍⬛ | 기타 Git 관련 작업                              |                            
 |  Clean   |  🧹   | Redundant 한 코드, 주석, 파일 등의 제거              |
-|  Chore   |   ➿   | 기타 중요도가 ___매우 낮은___ 작업 및 변경사항             |
-prepare-commit-msg 단계의 hook 을 이용하는 경우, :tag_name: 형태로 message 작성 시 자동으로 변환된다.\
-TAG와 달리 tag_name 은 소문자로 시작한다.
+|  Chore   |   ➿   | 기타 중요도가 ___낮은___ 작업 및 변경사항 (typo, )       |
+> ℹ️ TAG 와 대응되는 emoji 는 [carloscuesta의 gitmoji 가이드라인](https://gitmoji.dev/)에서 간소화하여 만들어졌다.
+
+본 repository 에 있는 prepare-commit-msg 단계의 hook 을 이용하는 경우, :tag_name: 형태로 message 작성 시 자동으로 변환된다.\
+TAG와 달리 tag_name 은 소문자로 시작한다 :
 ```c++
 // example 1
 //// Commit Message
@@ -67,8 +68,8 @@ TAG와 달리 tag_name 은 소문자로 시작한다.
 
 #### message
 - 커밋메시지는 50자 이내로 작성할 것을 권장한다.
-- 별도의 
-- 메시지의시작은 동사 원형을 사용한다. 첫 글자는 대문자로 시작한다.
+- 별도의 세부 내용은 content 에 따로 적도록 한다.
+- 메시지의 시작은 동사 원형을 사용한다. 첫 글자는 대문자로 시작한다.
 ```
 Make (O)
 make (X)
@@ -91,8 +92,10 @@ Made (X)
 - TAG1 과 TAG2 에 해당하는 변경사항이 해당 commit 안에 모두 들어있음을 의미 (이 경우 `[TAG1][TAGn] Message` 도 가능하나, __권장하지 아니함__)
 가독성 측면에서 좋지 못하므로 이중태그 방식을 사용할 경우 상위-하위 태그를 사용하는 방법으로만 이용하는 것을 권장한다.
   
-#### Gitmoji (carloscuesta's version)
-이모티콘을 사용하여 나타내는 commit message 를 gitmoji 라 한다. [gitmoji repository](https://github.com/carloscuesta/gitmoji)\
+#### Gitmoji by carloscuesta
+> ⚠️ 본 repository 의 내용은 carloscuesta 의 gitmoji 사용법 가이드라인에 기반한 커스텀 git hook 을 사용하는 gitmoji 사용을 기준으로 작성되었습니다.
+
+이모티콘을 사용하여 나타내는 commit message 를 gitmoji 라 한다. [carloscuesta's gitmoji repository](https://github.com/carloscuesta/gitmoji)\
 ♻️, ⚡ 등의 아이콘들을 이용하여 나타내면 되며 github 상에서 `:emoji_name:` 형태로 작성이 가능하다. (Discord 와 동일한 방식)\
 일반적인 서식은 TAG 위치에 이모지를 대신 넣는 것으로, `♻️ Refactor dialogue system's control method` 와 같이 사용할 수 있다.\
 gitmoji 또한 [커밋별 이모지 사용 가이드라인](https://gitmoji.dev/) 이 규정되어 있으나 이를 자신의 팀에 맞게 간소화하는 것을 권장한다.\
@@ -141,8 +144,15 @@ gitmoji 또한 [커밋별 이모지 사용 가이드라인](https://gitmoji.dev/
 
 
 ## Links
-[📜GitHub MD Syntax](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)\
+### Development
 [✍️Commit message rule reference](https://junhyunny.github.io/information/github/git-commit-message-rule/)\
+[⭕Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)\
+[♾️SW release lifecycle](https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EB%B0%B0%ED%8F%AC_%EC%83%9D%EB%AA%85_%EC%A3%BC%EA%B8%B0)\
+[😎Gitmoji by carloscuesta](https://github.com/carloscuesta/gitmoji)
+
+### GitHub MarkDown
+[📜GitHub MD Syntax](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)\
 [⏹️GitHub shield badge site](https://shields.io/)\
-[⭕SW release lifecycle](https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EB%B0%B0%ED%8F%AC_%EC%83%9D%EB%AA%85_%EC%A3%BC%EA%B8%B0)\
-[🛟GitHub server status](https://www.githubstatus.com/)
+
+### Utils
+[🛟GitHub server status](https://www.githubstatus.com/)\

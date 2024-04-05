@@ -95,6 +95,7 @@ TAG 위치에는 다음과 같은 태그들이 들어갈 수 있다.
 |  Revert  |   ⏪   | 변경사항 Revert                               |
 |  Cherry  |  🍒️  | Cherry-pick 수행                            |
 |   Git    | ️🐈‍⬛ | 기타 Git 관련 작업                              |                            
+|  Rename  |  ✏️   | 파일, 폴더명 변경                                |
 |  Clean   |  🧹   | Redundant 한 코드, 주석, 파일 등의 제거              |
 |  Chore   |   ➿   | 기타 중요도가 ___낮은___ 작업 및 변경사항 (typo, )       |
 > ℹ️ TAG 와 대응되는 emoji 는 [carloscuesta의 gitmoji 가이드라인](https://gitmoji.dev/)에서 간소화하여 만들어졌습니다.

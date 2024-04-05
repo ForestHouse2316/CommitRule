@@ -1,0 +1,15 @@
+﻿feat > ✨
+fix > 🐛
+patch > 🩹
+refactor > ♻️
+opt > ⚡
+style > 🎨
+test > 🧪
+docs > 📝
+res > ️📦
+ci > 🔃
+merge > 🔀
+revert > ️⏪
+cherry > 🍒
+clean > 🧹
+chore > ➿

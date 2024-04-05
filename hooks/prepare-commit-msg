@@ -4,7 +4,8 @@ COMMIT_MSG_FILE=$1
 TEMP_FILE=$(mktemp)
 
 # Define patterns
-sed -e 's/:feat:/✨/g'  \
+sed \
+-e 's/:feat:/✨/g' \
 -e 's/:fix:/🐛/g' \
 -e 's/:patch:/🩹/g' \
 -e 's/:refactor:/♻️/g' \

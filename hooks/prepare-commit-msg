@@ -18,6 +18,7 @@ sed \
 -e 's/:merge:/🔀/g' \
 -e 's/:revert:/️⏪/g' \
 -e 's/:cherry:/🍒/g' \
+-e 's/:rename:/✏️/g' \
 -e 's/:clean:/🧹/g' \
 -e 's/:chore:/➿/g' $COMMIT_MSG_FILE > $TEMP_FILE
 

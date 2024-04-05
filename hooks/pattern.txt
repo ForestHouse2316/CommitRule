@@ -11,5 +11,6 @@ ci > 🔃
 merge > 🔀
 revert > ️⏪
 cherry > 🍒
+rename > ✏️
 clean > 🧹
 chore > ➿

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+COMMIT_MSG_FILE=$1
+TEMP_FILE=$(mktemp)
+
+# Define patterns
+sed \
+-e 's/:feat:/✨/g' \
+-e 's/:fix:/🐛/g' \
+-e 's/:patch:/🩹/g' \
+-e 's/:refactor:/♻️/g' \
+-e 's/:opt:/⚡/g' \
+-e 's/:style:/🎨/g' \
+-e 's/:test:/🧪/g' \
+-e 's/:docs:/📝/g' \
+-e 's/:res:/️📦/g' \
+-e 's/:ci:/🔃/g' \
+-e 's/:merge:/🔀/g' \
+-e 's/:revert:/️⏪/g' \
+-e 's/:cherry:/🍒/g' \
+-e 's/:rename:/✏️/g' \
+-e 's/:clean:/🧹/g' \
+-e 's/:chore:/➿/g' $COMMIT_MSG_FILE > $TEMP_FILE
+
+# Replace the original message to the modified one
+mv $TEMP_FILE $COMMIT_MSG_FILE

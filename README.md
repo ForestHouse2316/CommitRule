@@ -61,18 +61,18 @@ Git-Flow 방식의 이력관리에서는 다음과 같은 5가지 브랜치가 �
 [git 사이트](https://git-scm.com/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C)에서 소개하는 3가지 방식의 workflow 가 있다.
 
 ### Centralized Workflow
-![](https://git-scm.com/book/en/v2/images/centralized_workflow.png)
+![](https://git-scm.com/book/en/v2/images/centralized_workflow.png)\
 하나의 repository 를 각 개발자가 clone 하여 사용, 작업은 브랜치를 기준으로 분리하여 사용한다.
 
 ### Integration-Manager Workflow
-![](https://git-scm.com/book/en/v2/images/integration-manager.png)
+![](https://git-scm.com/book/en/v2/images/integration-manager.png)\
 프로젝트 규모가 커지는 경우, 각 개발자의 작업이 다른 개발자와 겹치지 아니할 때 사용 가능한 방법.\
 상위 repository 를 각각의 개발자가 fork 하여 private repository 를 만들고,\
 이를 clone 하여 local repository 를 만든다.\
 기본적으로 Centralized Workflow 와 동일한 브랜치 구조를 가져가며, 개인별 
 
 ### Dictator and Lieutenants Workflow
-![](https://git-scm.com/book/en/v2/images/benevolent-dictator.png)
+![](https://git-scm.com/book/en/v2/images/benevolent-dictator.png)\
 GitHub-flow 기반의 공개 repository 와 오픈소스 프로젝트에서 유용한 방식.\
 초대형 프로젝트에서 사용할 수 있다.
 

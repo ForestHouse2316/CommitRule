@@ -15,6 +15,7 @@
 
 ### Types of branches in Git-Flow
 Git-Flow 방식의 이력관리에서는 다음과 같은 5가지 브랜치가 존재한다.\
+![](https://github.com/ForestHouse2316/CommitRule/blob/main/Documents/git-flow%20example%20korean.png?raw=true)
 
 #### Ⓜ️ main
 `master` 로도 불리는 브랜치로 배포와 직접적으로 연결된다.

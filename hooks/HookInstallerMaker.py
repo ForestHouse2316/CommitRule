@@ -18,7 +18,7 @@ set "HOOK_FILE=.git/hooks/prepare-commit-msg"
             line = f.readline()
             if not line:
                 break
-            
+
             if line == "\n":
                 w('echo.')
             else:

@@ -20,10 +20,9 @@ sed''')
             if len(args) != 2:
                 SyntaxError(f"Wrong syntax : {line}")
             wp(args[0].strip(), args[1].strip())
-    
+
     f.writelines(''' $COMMIT_MSG_FILE > $TEMP_FILE
 
 # Replace the original message to the modified one
 mv $TEMP_FILE $COMMIT_MSG_FILE
 ''')
-                

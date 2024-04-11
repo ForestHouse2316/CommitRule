@@ -100,25 +100,26 @@ GitHub-flow 기반의 공개 repository 와 오픈소스 프로젝트에서 유�
 #### TAG (emoji)
 TAG 위치에는 다음과 같은 태그들이 들어갈 수 있다.
 
-|   TAG    | emoji | Use when                                  |
-|:--------:|:-----:|-------------------------------------------|
-|   Feat   |   ✨   | 새로운 기능의 추가                                |
-|   Fix    |  🐛   | 버그 수정                                     |
-|  Patch   |  🩹   | 사소한 버그, 밸런스, 계산식, 상수값 수정                  |
-| Refactor |  ♻️   | 유지보수를 위한 코드 리팩터링 (_최적화는 Opt 이용_)          |
-|   Opt    |   ⚡   | 로직 및 성능 최적화 (_단순 유지보수는 Refactor 이용_)      |
-|  Style   |  🎨   | 로직상 변경이 없는 코드 format, structure, 변수명 변경   |
-|   Test   |  🧪   | Test 와 관련된 모든 작업                          |
-|   Docs   |  📝   | Readme, 설명서, 코드 doc 관련 작업 (리소스 제외)           |
-|   Res    |  📦   | 의존성 있는 모든 리소스 파일 및 빌드 (이미지, JSON, .exe 등) |
-|    CI    |  🔃️  | CI 관련 작업                                  |
-|  Merge   |  🔀️  | Merge 관련 작업                               |
-|  Revert  |   ⏪   | 변경사항 Revert                               |
-|  Cherry  |  🍒️  | Cherry-pick 수행                            |
-|   Git    | ️🐈‍⬛ | 기타 Git 관련 작업                              |                            
-|  Rename  |  ✏️   | 파일, 폴더명 변경                                |
-|  Clean   |  🧹   | Redundant 한 코드, 주석, 파일 등의 제거              |
-|  Chore   |   ➿   | 기타 중요도가 ___낮은___ 작업 및 변경사항 (typo 수정, 단순 comment 추가)       |
+|   TAG    | emoji | Use when                                            |
+|:--------:|:-----:|-----------------------------------------------------|
+|   Feat   |   ✨   | 새로운 기능의 추가                                          |
+|   Fix    |  🐛   | 버그 수정                                               |
+|  Patch   |  🩹   | 사소한 버그, 밸런스, 계산식, 상수값 수정                            |
+| Refactor |  ♻️   | 유지보수를 위한 코드 리팩터링 (_최적화는 Opt 이용_)                    |
+|   Opt    |   ⚡   | 로직 및 성능 최적화 (_단순 유지보수는 Refactor 이용_)                |
+|  Style   |  🎨   | 로직상 변경이 없는 코드 format, structure, 변수명 변경             |
+|   Test   |  🧪   | Test 와 관련된 모든 작업                                    |
+|   Docs   |  📝   | Readme, 설명서, 코드 doc 관련 작업 (리소스 제외)                  |
+|   Res    |  📦   | 의존성 있는 모든 리소스 파일 및 빌드 (이미지, JSON, .exe 등)           |
+|   Dep    |  🔌   | 의존성 작업 (추가 / 삭제 / 버전변경)                             |
+|    CI    |  🔃️  | CI 관련 작업                                            |
+|  Merge   |  🔀️  | Merge 관련 작업                                         |
+|  Revert  |   ⏪   | 변경사항 Revert                                         |
+|  Cherry  |  🍒️  | Cherry-pick 수행                                      |
+|   Git    | ️🐈‍⬛ | 기타 Git 관련 작업                                        |                            
+|  Rename  |  ✏️   | 파일, 폴더명 변경                                          |
+|  Clean   |  🧹   | Redundant 한 코드, 주석, 파일 등의 제거                        |
+|  Chore   |   ➿   | 기타 중요도가 ___낮은___ 작업 및 변경사항 (typo 수정, 단순 comment 추가) |
 > ℹ️ TAG 와 대응되는 emoji 는 [carloscuesta의 gitmoji 가이드라인](https://gitmoji.dev/)에서 간소화하여 만들어졌습니다.
 
 > ⚠️ 본 repository 의 내용은 git hook 을 사용하여 상기한 emoji를 사용하는 방식을 기준으로 적혀있습니다.\

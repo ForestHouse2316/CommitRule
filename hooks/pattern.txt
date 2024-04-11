@@ -7,6 +7,7 @@ style > 🎨
 test > 🧪
 docs > 📝
 res > ️📦
+dep > 🔌
 ci > 🔃
 merge > 🔀
 revert > ️⏪

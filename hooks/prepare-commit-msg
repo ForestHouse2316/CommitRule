@@ -14,6 +14,7 @@ sed \
 -e 's/:test:/🧪/g' \
 -e 's/:docs:/📝/g' \
 -e 's/:res:/️📦/g' \
+-e 's/:dep:/🔌/g' \
 -e 's/:ci:/🔃/g' \
 -e 's/:merge:/🔀/g' \
 -e 's/:revert:/️⏪/g' \

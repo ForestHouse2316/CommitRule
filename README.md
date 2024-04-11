@@ -11,7 +11,7 @@
 
 </details>
 
-## Supplies
+## Preparations
 - [Batchfile](https://github.com/ForestHouse2316/CommitRule/blob/main/hooks/sethook.bat)을 통해 .git 폴더에 hook 설치, .git 폴더와 같은 위치에 두고 실행
 - [추천 git 관련 링크](https://github.com/ForestHouse2316/CommitRule/tree/main#links) 둘러보기
 

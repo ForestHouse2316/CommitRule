@@ -11,6 +11,10 @@
 
 </details>
 
+## Supplies
+- [Batchfile](https://github.com/ForestHouse2316/CommitRule/blob/main/hooks/sethook.bat)을 통해 .git 폴더에 hook 설치, .git 폴더와 같은 위치에 두고 실행
+- [추천 git 관련 링크](https://github.com/ForestHouse2316/CommitRule/tree/main#links) 둘러보기
+
 ## Branch
 
 ### Types of branches in Git-Flow
@@ -212,16 +216,21 @@ TAG와 달리 tag_name 은 소문자로 시작한다 :
 
 
 ## Links
+본 레포지토리의 내용과 관련된 부분들은 들여쓰기로 강조표시 하였다.
 ### Development
-[✍️Commit message rule reference](https://junhyunny.github.io/information/github/git-commit-message-rule/)\
-[⭕Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)\
-[♾️SW release lifecycle](https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EB%B0%B0%ED%8F%AC_%EC%83%9D%EB%AA%85_%EC%A3%BC%EA%B8%B0)\
-[😎Gitmoji by carloscuesta](https://github.com/carloscuesta/gitmoji)\
-[🌳Kinds of branches](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)
+> [✍️Commit message rule reference](https://junhyunny.github.io/information/github/git-commit-message-rule/)\
+> [♾️SW release lifecycle](https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EB%B0%B0%ED%8F%AC_%EC%83%9D%EB%AA%85_%EC%A3%BC%EA%B8%B0)\
+> [😎Gitmoji by carloscuesta](https://github.com/carloscuesta/gitmoji)\
+> [🌳Kinds of branches in Git-Flow](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)\
+> [🔀Merge methods](https://jangjjolkit.tistory.com/49)
+
+[📥Stash/Shelve Difference](https://allonsyit.tistory.com/127)\
+[⭕Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ### GitHub MarkDown
-[📜GitHub MD Syntax](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)\
-[⏹️GitHub shield badge site](https://shields.io/)\
+> [📜GitHub MD Syntax](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+[⏹️GitHub shield badge site](https://shields.io/)
 
 ### Utils
-[🛟GitHub server status](https://www.githubstatus.com/)\
+[🛟GitHub server status](https://www.githubstatus.com/)

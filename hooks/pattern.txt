@@ -12,6 +12,7 @@ ci > 🔃
 merge > 🔀
 revert > ️⏪
 cherry > 🍒
+git > 🐈‍⬛
 rename > ✏️
 clean > 🧹
 chore > ➿

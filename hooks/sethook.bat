@@ -29,6 +29,7 @@ echo -e 's/:ci:/🔃/g' \
 echo -e 's/:merge:/🔀/g' \
 echo -e 's/:revert:/️⏪/g' \
 echo -e 's/:cherry:/🍒/g' \
+echo -e 's/:git:/🐈‍⬛/g' \
 echo -e 's/:rename:/✏️/g' \
 echo -e 's/:clean:/🧹/g' \
 echo -e 's/:chore:/➿/g' $COMMIT_MSG_FILE ^> $TEMP_FILE

@@ -120,7 +120,7 @@ TAG 위치에는 다음과 같은 태그들이 들어갈 수 있다.
 |  Merge   |  🔀️  | Merge 관련 작업                                         |
 |  Revert  |   ⏪   | 변경사항 Revert                                         |
 |  Cherry  |  🍒️  | Cherry-pick 수행                                      |
-|   Git    | ️🐈‍⬛ | 기타 Git 관련 작업                                        |                            
+|   Git    |  ️🐈  | 기타 Git 관련 작업                                        |                            
 |  Rename  |  ✏️   | 파일, 폴더명 변경                                          |
 |  Clean   |  🧹   | Redundant 한 코드, 주석, 파일 등의 제거                        |
 |  Chore   |   ➿   | 기타 중요도가 ___낮은___ 작업 및 변경사항 (typo 수정, 단순 comment 추가) |

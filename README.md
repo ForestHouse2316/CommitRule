@@ -197,14 +197,43 @@ TAG와 달리 tag_name 은 소문자로 시작한다 :
 
 ## Develop
 ### Develop process
-#### Materialization of project
-#### Making class hierarchy
-#### Setting root-level class (MainClass)
-#### Distribute and assign works
-### Default develop range of each authors
-### Way to make a communication between classes with different authors
-### Modifying Interface & AbstracClass
-
+### Interface & AbstractClass for co-working
+### Documenting & Commenting
+#### Doc
+Doc 은 메서드, 변수 등에 설명을 붙여 코드 리뷰 시 높은 가독성을 제공하고 IDE 에서 표시될 수 있게 한다.\
+`//` or `///` or `/** Content */` or `#` 등을 기본으로 사용한다.\
+Doc 방식은 언어마다 다르므로 문법에 맞게 사용하는 것을 권장한다.\
+모든 멤버들이 Doc을 가질 필요는 없으나, 다른 사람이 보고 이해할 수 있어야 하므로 대부분의 멤버에게 작성하는 것이 권장된다.\
+\
+Doc을 작성한다면, 다음 사항들을 충족시키도록 한다 :
+- 변수, 메서드, Property(프로퍼티) 가 하는 역할과 작업을 적는다.\
+  이름을 보고 **충분히** 유추가 가능한 경우 생략해도 좋다. _(e.g. GetText)_
+- 상기한 역할과 작업 중 반드시 알아두어야 하는 내용을 적는다.\
+  (e.g. GetAccumulatedValue() 메서드가 값을 반환함과 동시에 특정 변수의 값을 0으로 초기화 하는 경우 등)
+- Parameter(매개변수), GenericType(가변타입, 타입변수) 등이 무엇을 필요로 하는지 명시한다.\
+만일 `int id` 를 매개변수로 받을 경우 무엇의 id 인지, 무엇에 근거한 id 인지 명시한다.
+- 명시적으로 예외를 `throw` 하는 경우 해당 예외의 발생 조건을 명시한다.
+- 다른 메서드, 클래스 등과 유기적인 관계를 맺는 경우 이를 참조하여 바로가기를 적는 것을 권장한다.\
+  (해당 기능이 지원되는 Doc을 가진 언어에 한함)
+#### Comment
+`//` or `#` 등 사용하는 언어의 문법을 따른다.\
+Comment-block 도 존재하나, 되도록이면 One-line comment 를 이용하여 적도록 한다. :
+```
+// This is comment.
+// You may use comment block, but try not to use it.
+// Because we'll use it to write "Important Comment" 
+```
+이와 같이 주석 블럭의 사용을 제한하는 이유는 후술할 Important comment 에 사용하기 위함이다.
+#### TODO
+`// TODO Content` or `# TODO Content` 등 사용하는 언어의 문법을 따른다.\
+위와 같이 적을 경우, 일부 IDE는 TODO List 로 모아서 표기해주는 기능이 있다.\
+추가적으로 자신만의 TAG 를 붙여 `// TODO TAG Content` 형식으로 사용하여도 좋다.\
+(e.g. `// TODO SYNC Remove this`, `// TODO FOREST Optimize logic`)
+#### Important comment
+`/* Content */` or `/** */` or `''' Content '''` 등의 블럭 주석을 이용한다.\
+이곳에 메서드 호출 순서, 값 할당 시 주의점 등 코드 내용을 건드릴 때 주의하여야 하는 부분들을 명시한다.\
+또한 팀원 간 블럭 주석을 중요 내용 표기에 사용하기로 합의한 경우, 다음과 같이 IDE Color scheme 설정을 바꾸면 가독성을 향상시킬 수 있다 :
+![](https://github.com/ForestHouse2316/CommitRule/blob/main/Documents/important%20comment%20example.png?raw=true)
 
 ## Debug & Fix
 

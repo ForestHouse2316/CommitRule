@@ -13,13 +13,13 @@ sed \
 -e 's/:style:/🎨/g' \
 -e 's/:test:/🧪/g' \
 -e 's/:docs:/📝/g' \
--e 's/:res:/️📦/g' \
+-e 's/:res:/📦/g' \
 -e 's/:dep:/🔌/g' \
 -e 's/:ci:/🔃/g' \
 -e 's/:merge:/🔀/g' \
--e 's/:revert:/️⏪/g' \
+-e 's/:revert:/⏪/g' \
 -e 's/:cherry:/🍒/g' \
--e 's/:git:/🐈/g' \
+-e 's/:git:/🐈‍⬛/g' \
 -e 's/:rename:/✏️/g' \
 -e 's/:clean:/🧹/g' \
 -e 's/:chore:/➿/g' $COMMIT_MSG_FILE > $TEMP_FILE

@@ -1,7 +1,7 @@
 ﻿def make_hook():
     with open('prepare-commit-msg', 'w', encoding='utf-8') as f:
         def wp(tag, emoji):
-            f.writelines(f"-e 's/:{tag}:/{emoji}/g'")
+            f.writelines(f"-e 's/:{tag}:/{emoji}/g'".replace("/️", "/")) # replace unknown combination of slash(/️ -> /)
         f.writelines('''#!/bin/sh
 
 COMMIT_MSG_FILE=$1
